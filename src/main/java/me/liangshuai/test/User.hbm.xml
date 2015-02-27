@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="me.liangshuai.test.User" table="user" polymorphism="explicit">
+		<id name="id" column="id">
+			<generator class="uuid" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="username"></column>
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password"></column>
+		</property>
+	</class>
+</hibernate-mapping>
